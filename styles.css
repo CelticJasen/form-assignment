@@ -21,6 +21,10 @@ body {
     background-color: #dff;
 }
 
+.formDiv {
+    display: flex;
+}
+
 img {
     display: block;
     max-height: 100vh;
