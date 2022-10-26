@@ -9,9 +9,13 @@ html, body {
 }
 
 body {
+    display: flex;
+    justify-content: center;
     font-family: Norse-Bold;
+    background-color: #111;
 }
 
 img {
-    height: 100vh;
+    display: block;
+    max-height: 100vh;
 }
