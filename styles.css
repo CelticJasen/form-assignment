@@ -3,28 +3,13 @@
     src: url('./Norse-Bold.otf') format('opentype');
 }
 
-html {
-    height: 100vh;
-    margin: 0px;
-    padding: 0px;
+html, body {
+    margin: 0;
+    padding: 0;
 }
 
 body {
     font-family: Norse-Bold;
-    background-color: beige;
-    max-height: 100vh;
-    margin: 0px;
-    padding: 0px;
-}
-
-.mainDiv {
-    display: flex;
-    height: 100vh;
-}
-
-.imageDiv {
-    flex-shrink: 2;
-    height: 100vh
 }
 
 img {
