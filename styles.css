@@ -12,20 +12,73 @@ body {
     display: flex;
     justify-content: center;
     font-family: Norse-Bold;
+    font-size: x-large;
     background-color: #111;
 }
 
 .mainDiv {
+    display: flex;
     height: 100vh;
     width: 70vw;
     background-color: #dff;
+    
+}
+
+.imageDiv {
+    
 }
 
 .formDiv {
     display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 50vw;
 }
 
 img {
     display: block;
     max-height: 100vh;
+}
+
+.formNameItems {
+    display: flex;
+    padding-top: 5vh;
+}
+
+.formFirstName {
+    padding-right: 5vw;
+}
+
+.formContactItems {
+    display: flex;
+    padding-top: 5vh;
+}
+
+.formEmail {
+    padding-right: 5vw;
+}
+
+.formPasswordItems {
+    display: flex;
+    padding-top: 5vh;
+}
+
+.formPassword {
+    padding-right: 5vw;
+}
+
+.formSubmitButton {
+    padding-top: 5vh;
+}
+
+.button {
+    font-family: Norse-bold;
+    background-color: blue;
+    color: white;
+    font-size: x-large;
+}
+
+.formLogIn {
+    padding-top: 5vh;
 }
