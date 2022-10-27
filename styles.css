@@ -16,6 +16,15 @@ body {
     background-color: #111;
 }
 
+input {
+    border-radius: 0.5vw;
+}
+
+img {
+    display: block;
+    max-height: 100vh;
+}
+
 .mainDiv {
     display: flex;
     height: 100vh;
@@ -36,9 +45,17 @@ body {
     width: 50vw;
 }
 
-img {
-    display: block;
-    max-height: 100vh;
+.formItemsDiv {
+
+}
+
+.formSignUp {
+    font-size: 4vw;
+}
+
+.formInputItems input {
+    width: 10vw;
+    height: 3vh;
 }
 
 .formNameItems {
@@ -77,6 +94,7 @@ img {
     background-color: blue;
     color: white;
     font-size: x-large;
+    padding: 1vw 1.5vw 1vw 1.5vw;
 }
 
 .formLogIn {
