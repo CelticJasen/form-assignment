@@ -13,7 +13,7 @@
             <img src="./background.jpg" alt="universe">
         </div>
         <div class="formDiv">
-            <form action="post">
+            <form method="post">
                 <div class="formItemsDiv">
                     <div class="formSignUp">
                         <legend>Sign Up Now!</legend>
@@ -21,32 +21,32 @@
                     <div class="formInputItems">
                         <div class="formNameItems">
                             <div class="formFirstName">
-                                <label for="fname">FIRST NAME</label><br>
-                                <input type="text" id="fname" name="fname">
+                                <label for="fname">*FIRST NAME</label><br>
+                                <input type="text" id="fname" name="fname" placeholder="Jack" maxlength="15" required>
                             </div>
                             <div class="formLastName">
-                                <label for="lname">LAST NAME</label><br>
-                                <input type="text" id="lname" name="lname">
+                                <label for="lname">*LAST NAME</label><br>
+                                <input type="text" id="lname" name="lname" placeholder="Hoffer" maxlength="15" required>
                             </div>
                         </div>
                         <div class="formContactItems">
                             <div class="formEmail">
-                                <label for="email">EMAIL</label><br>
-                                <input type="text" name="email" id="email">
+                                <label for="email">*EMAIL</label><br>
+                                <input type="email" name="email" id="email" placeholder="jackhoffer@hotmail.com" minlength="5" maxlength="50">
                             </div>
                             <div class="formPhone">
                                 <label for="pnumber">PHONE NUMBER</label><br>
-                                <input type="text" name="pnumber" id="pnumber">
+                                <input type="tel" name="pnumber" id="pnumber" placeholder="301-371-4312" minlength="10" maxlength="20">
                             </div>
                         </div>
                         <div class="formPasswordItems">
                             <div class="formPassword">
-                                <label for="pword">PASSWORD</label><br>
-                                <input type="text" name="pword" id="pword">
+                                <label for="pword">*PASSWORD</label><br>
+                                <input type="password" name="pword" id="pword" required pattern="^(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9])(?=.*[!@#$%^&*_=+-]).{8,20}$" onkeyup="check();">
                             </div>
                             <div class="formConfirmPassword">
-                                <label for="cpword">CONFIRM PASSWORD</label><br>
-                                <input type="text" name="cpword" id="cpword">
+                                <label for="cpword" id="cpwordMessage">*CONFIRM PASSWORD</label><br>
+                                <input type="password" name="cpword" id="cpword" minlength="8" maxlength="50" required pattern="^(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9])(?=.*[!@#$%^&*_=+-]).{8,20}$" onkeyup="check();">
                             </div>
                         </div>
                     </div>
@@ -54,11 +54,23 @@
                         <input class="button" type="submit" value="CREATE ACCOUNT" />
                     </div>
                     <div class="formLogIn">
-                        <span>Already have an account? <a href="https://www.google.com">Log in</a></span>
+                        <span>Already have an account? <a href="https://static.wikia.nocookie.net/utaulyrics/images/6/68/Welcome_to_the_Universe.jpg/revision/latest/scale-to-width-down/250?cb=20180615141218">Log in</a></span>
                     </div>
                 </div>
             </form>
         </div>
     </div>
 </body>
+<script>
+    var check = function() {
+        if (document.getElementById('pword').value ==
+            document.getElementById('cpword').value) {
+            document.getElementById('cpwordMessage').style.color = 'green';
+            document.getElementById('cpwordMessage').innerHTML = '*CONFIRM PASSWORD: matching';
+        } else {
+            document.getElementById('cpwordMessage').style.color = 'red';
+            document.getElementById('cpwordMessage').innerHTML = '*CONFIRM PASSWORD: not matching';
+        }
+    }
+</script>
 </html>
